@@ -1,0 +1,126 @@
+/*
+Author: Donovan Hayden
+Date: 8-07-2023
+File Name: retronet.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Style rules for body and images */
+body {
+	width: 800px;
+	background-color: #000;
+	font-family: 'Times New Roman';
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+img.discordpropic {
+	width: 100%;
+	height: 100%;
+}
+
+/* Style rule for header */
+header {
+	background-color: #000;
+	color: #0f0;
+	float: center;
+	text-align: center;
+}
+
+/* Style rules for navigation area */
+nav {
+	width: 100%;
+	background-color: #aaa;
+	border: 1px solid black;
+	padding: 0.1%;
+}
+
+nav table {
+	width: 100%;
+	background-color: #aaa;
+	border: 1px solid black;
+	padding: 0.1%;
+}
+
+nav tr {
+	margin: 0;
+	background-color: #aaa;
+	border: 1px solid black;
+}
+
+nav td {
+	background-color: #aaa;
+	border: 1px solid black;
+	display: inline-block;
+	font-size: 16;
+	padding: 1%;
+}
+
+nav td.right {
+	float: right;
+}
+
+nav td a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* Style rules for content */
+main {
+	background-color: #aaa;
+	width: 100%;
+}
+
+main table {
+	background-color: #aaa;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid black;
+	padding: 0.1%;
+}
+
+main tr {
+	background-color: #aaa;
+	margin: 0;
+	border: 1px solid black;
+}
+
+main td {
+	background-color: #aaa;
+	margin: 0;
+	border: 1px solid black;
+}
+
+main td.side {
+	width: 30%;
+	font-size: 12px;
+}
+
+main td.main {
+	width: 70%;
+	font-size: 14px
+}
+
+/* Style rules for footer content */
+footer {
+	background-color: #aaa;
+	text-align: center;
+	width: 100%;
+	border: 1px solid black;
+}
+
+footer p {
+	font-size: 14px;
+}
