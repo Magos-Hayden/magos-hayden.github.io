@@ -1,6 +1,6 @@
 /*
 Author: Donovan Hayden
-Date: 8-07-2023
+Date: 8-08-2023
 File Name: retronet.css
 */
 
@@ -16,16 +16,17 @@ body {
 	width: 800px;
 	background-color: #000;
 	font-family: 'Times New Roman';
-	border: 1px solid black;
+	border: 1px solid #115612;
 	margin: 0 auto;
 }
 
 img {
 	max-width: 100%;
 	display: block;
+	border: 5px dashed #115612;
 }
 
-img.discordpropic {
+img.pic {
 	width: 100%;
 	height: 100%;
 }
@@ -33,45 +34,57 @@ img.discordpropic {
 /* Style rule for header */
 header {
 	background-color: #000;
-	color: #0f0;
+	color: #115612;
 	float: center;
 	text-align: center;
+	padding: 5%;
+}
+
+h1 {
+	font-family: 'Courier New';
+	color: #115612;
+}
+
+h2 {
+	font-family: 'Courier New';
+	color: #115612;
+}
+
+h4 {
+	font-family: 'Sans';
+	color: #115612;
 }
 
 /* Style rules for navigation area */
 nav {
 	width: 100%;
-	background-color: #aaa;
-	border: 1px solid black;
-	padding: 0.1%;
+	background-color: #000;
+	border: 1px solid #115612;
 }
 
 nav table {
 	width: 100%;
-	background-color: #aaa;
-	border: 1px solid black;
-	padding: 0.1%;
+	background-color: #000;
+	border: 1px solid #115612;
 }
 
 nav tr {
 	margin: 0;
-	background-color: #aaa;
-	border: 1px solid black;
+	background-color: #000;
+	border: 1px solid #115612;
+	padding: 0.1%;
 }
 
 nav td {
-	background-color: #aaa;
-	border: 1px solid black;
+	background-color: #000;
+	border: 1px solid #115612;
 	display: inline-block;
 	font-size: 16;
 	padding: 1%;
 }
 
-nav td.right {
-	float: right;
-}
-
 nav td a {
+	color: #5DF15D;
 	display: block;
 	text-align: center;
 	text-decoration: none;
@@ -79,33 +92,40 @@ nav td a {
 
 /* Style rules for content */
 main {
-	background-color: #aaa;
+	background-color: #000;
+	color: #C8335B;
 	width: 100%;
 }
 
 main table {
-	background-color: #aaa;
 	width: 100%;
+	background-color: #000;
 	box-sizing: border-box;
-	border: 1px solid black;
+	border: 1px solid #115612;
 	padding: 0.1%;
 }
 
 main tr {
-	background-color: #aaa;
+	background-color: #000;
 	margin: 0;
-	border: 1px solid black;
+	border: 1px solid #115612;
 }
 
 main td {
-	background-color: #aaa;
+	background-color: #000;
 	margin: 0;
-	border: 1px solid black;
+	border: 1px solid #115612;
+	padding: 2%;
+}
+
+main td a {
+	color: #5DF15D;
 }
 
 main td.side {
 	width: 30%;
-	font-size: 12px;
+
+	font-size: 14px
 }
 
 main td.main {
@@ -115,12 +135,17 @@ main td.main {
 
 /* Style rules for footer content */
 footer {
-	background-color: #aaa;
+	background-color: #000;
 	text-align: center;
 	width: 100%;
-	border: 1px solid black;
+	border: 1px solid #115612;
 }
 
 footer p {
 	font-size: 14px;
+	color: #C8335B;
+}
+
+footer p a {
+	color: #5DF15D;
 }
