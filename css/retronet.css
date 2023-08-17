@@ -1,6 +1,6 @@
 /*
 Author: Donovan Hayden
-Date: 8-08-2023
+Date: 8-17-2023
 File Name: retronet.css
 */
 
@@ -13,11 +13,11 @@ body, header, nav, main, footer, h1, div, img {
 
 /* Style rules for body and images */
 body {
-	width: 800px;
+	width: 80%;
+	margin: 0 auto;
 	background-color: #000;
 	font-family: 'Times New Roman';
 	border: 1px solid #115612;
-	margin: 0 auto;
 }
 
 img {
@@ -27,59 +27,63 @@ img {
 }
 
 img.pic {
-	width: 100%;
-	height: 100%;
+	max-width: 75%;
+	margin: auto;
+	text-align: center;
 }
 
-/* Style rule for header */
+/* Style rule for Mobile Viewport */
+
+/* Style rule for header, h1-4 */
 header {
 	background-color: #000;
-	color: #115612;
-	float: center;
+	border: 1px solid #115612;
+	top: 0;
 	text-align: center;
 	padding: 5%;
 }
 
 h1 {
 	font-family: 'Courier New';
-	color: #115612;
+	color: #C8335B;
 }
 
 h2 {
 	font-family: 'Courier New';
-	color: #115612;
+	color: #C8335B;
 }
 
 h4 {
 	font-family: 'Sans';
-	color: #115612;
+	color: #C8335B;
 }
 
 /* Style rules for navigation area */
 nav {
-	width: 100%;
-	background-color: #000;
 	border: 1px solid #115612;
+	text-align: center;
+	margin-bottom: 1%;
 }
 
 nav table {
 	width: 100%;
 	background-color: #000;
 	border: 1px solid #115612;
-}
-
-nav tr {
-	margin: 0;
-	background-color: #000;
-	border: 1px solid #115612;
 	padding: 0.1%;
 }
 
+nav tr {
+	width: 100%;
+	background-color: #000;
+	border: 1px solid #115612;
+}
+
 nav td {
+	width: 30%;
 	background-color: #000;
 	border: 1px solid #115612;
 	display: inline-block;
-	font-size: 16;
+	font-size: 16px;
 	padding: 1%;
 }
 
@@ -90,11 +94,25 @@ nav td a {
 	text-decoration: none;
 }
 
+nav td a:hover {
+	background-color: #5DF15D;
+	color: #000;
+}
+
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+	display: block;
+}
+
+.tablet-desktop {
+	display: none;
+}
+
 /* Style rules for content */
 main {
 	background-color: #000;
 	color: #C8335B;
-	width: 100%;
+	border: 1px solid #115612;
 }
 
 main table {
@@ -107,13 +125,11 @@ main table {
 
 main tr {
 	background-color: #000;
-	margin: 0;
 	border: 1px solid #115612;
 }
 
 main td {
 	background-color: #000;
-	margin: 0;
 	border: 1px solid #115612;
 	padding: 2%;
 }
@@ -124,7 +140,6 @@ main td a {
 
 main td.side {
 	width: 30%;
-
 	font-size: 14px
 }
 
@@ -137,15 +152,53 @@ main td.main {
 footer {
 	background-color: #000;
 	text-align: center;
-	width: 100%;
 	border: 1px solid #115612;
 }
 
 footer p {
-	font-size: 14px;
+	font-size: 12px;
 	color: #C8335B;
 }
 
 footer p a {
 	color: #5DF15D;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+
+	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+	.tablet-desktop {
+		display: block;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px), print {
+
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+
+	#container {
+		width: 1920px;
+		margin: 0 auto;
+	}
+
+}
+
+/* Media Query for Print */
+@media print {
+
+	body {
+		background-color: #fff;
+		color: #000;
+	}
+
 }
